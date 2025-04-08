@@ -1,0 +1,40 @@
+.active1 {
+  position: relative;
+}
+
+.active1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust this value as needed */
+  width: 0; /* Start with 0 width */
+  height: 2px; /* Adjust this value as needed */
+  background-color: blue;
+  animation: underlineAnimation 0.3s forwards; /* Apply animation */
+  animation-delay: 0.5s; /* Delay the animation */
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0; /* Start with 0 width */
+  }
+  100% {
+    width: 100%; /* Gradually increase width to 100% */
+  }
+}
+/* In subNav.css */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.active1 {
+  font-weight: bold;
+  color: #ffd700; /* Adjust the color for active state */
+}
+
+/* Ensure top margin on the sticky element for spacing from top */
+.hidden.lg\\:flex {
+  margin-top: calc(90px + 1rem);
+}
+
