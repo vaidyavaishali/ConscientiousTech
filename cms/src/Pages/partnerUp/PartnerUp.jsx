@@ -102,7 +102,7 @@ const PartnerUp = () => {
       );
 
       const response = await axios.post(
-        "http://localhost:8080/add-partner-up-data",
+        "https://conscientious-tech.vercel.app/add-partner-up-data",
         formData
       );
 
@@ -141,7 +141,7 @@ const PartnerUp = () => {
       );
 
       const response = await axios.put(
-        `http://localhost:8080/edit-partner-up-data/${editId}`,
+        `https://conscientious-tech.vercel.app/edit-partner-up-data/${editId}`,
         formData
       );
       if (response.status === 200) {

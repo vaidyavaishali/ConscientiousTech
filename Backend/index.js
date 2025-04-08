@@ -19,7 +19,7 @@ app.use(route)
 
 
 app.listen(process.env.PORT, () => {
-    console.log('server runnning @http://localhost:8080/')
+    console.log('server runnning @https://conscientious-tech.vercel.app/')
 })
 
 
